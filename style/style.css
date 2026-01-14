@@ -35,7 +35,7 @@ header {
 .banner,
 .team-section,
 .love-and-enjoy,
-.sponsor {
+.sponsor, footer {
     max-width: 90rem;
     margin: 0 auto;
 
@@ -274,6 +274,19 @@ ul .nav-items .nav-links {
 }
 .sponsor-card img{
     filter: grayscale(100%);
+}
+footer{
+    margin-bottom: 10rem;
+}
+.footer p{
+    text-align: center;
+    padding: 1.25rem 0;
+
+}
+.footer{
+    background-color: #FFF4E7;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* team section style end */
 
