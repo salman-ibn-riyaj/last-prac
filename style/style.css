@@ -18,7 +18,7 @@
     display: flex;
 }
 
-main > section {
+main>section {
     margin: 7.5rem 0;
 }
 
@@ -33,7 +33,9 @@ header {
 }
 
 .banner,
-.team-section {
+.team-section,
+.love-and-enjoy,
+.sponsor {
     max-width: 90rem;
     margin: 0 auto;
 
@@ -140,53 +142,139 @@ ul .nav-items .nav-links {
 }
 
 /* fact style start  */
- .some-facts .fact-title{
+.some-facts .fact-title {
     font-size: 2.81rem;
     font-weight: 700;
     color: rgba(19, 19, 19, 1);
     margin-bottom: 1.5rem;
- }
+}
 
- .some-facts .fact-para{
+.some-facts .fact-para {
     color: rgba(114, 114, 114, 1);
     max-width: 33.75rem;
     margin-bottom: 3rem;
- }
+}
 
- .fact-number{
+.fact-number {
     font-size: 2.81rem;
     font-weight: 600;
     color: rgba(66, 66, 66, 1);
     margin-bottom: .3rem;
- }
+}
 
- .fact-message{
+.fact-message {
     font-size: 1.25rem;
     font-weight: 600;
     color: rgba(114, 114, 114, 1);
- }
+}
 
- .fact-card{
+.fact-card {
     text-align: center;
     padding: 2.5rem;
     border: 1px solid rgba(255, 144, 14, 1);
     border-radius: 8px;
     width: 241px;
- }
+}
 
- .fact-card-container{
+.fact-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
- }
+}
 
- .some-facts{
+.some-facts {
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 7.5rem;
- }
+}
 
 
+.love-title {
+    font-size: 2.81rem;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: .7rem;
+}
+
+.love-para {
+    color: #727272;
+    margin-bottom: 3rem;
+}
+
+.love-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: .5rem;
+}
+
+.love-card p {
+    color: #727272;
+
+}
+
+.love-card {
+    padding: 2rem;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    margin-bottom: .9rem;
+    max-width: 31rem;
+}
+
+.love-and-enjoy {
+    display: flex;
+    gap: 8.87rem;
+
+}
+
+#primary-btn {
+    padding: 4rem 3rem;
+    margin-top: -6.25rem;
+    margin-left: -6.25rem;
+}
+
+.ten-year {
+    font-size: 2.81rem;
+    font-weight: 700;
+    color: white;
+}
+
+.experi {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.sponsor {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.sponsor-content{
+    max-width: 33rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.sponsor-title{
+    font-size: 2.81rem;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 1.25rem;
+}
+.sponsor p{
+    color: #727272;
+}
+
+.sponsor-card{
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+.sponsor-card img{
+    filter: grayscale(100%);
+}
 /* team section style end */
 
 
@@ -216,10 +304,37 @@ ul .nav-items .nav-links {
         max-width: 100%;
     }
 
-     .fact-card-container{
+    .fact-card-container {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-     }
+    }
+
+    .love-and-enjoy {
+        flex-direction: column;
+    }
+
+    .love-image img {
+        width: 100%;
+    }
+
+    #primary-btn {
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+
+        margin-bottom: 3rem;
+    }
+
+    .love-card {
+        padding: .5rem .5rem;
+        margin: 0 .5rem;
+    }
+
+    .sponsor-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsor{
+        justify-items: center;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -230,5 +345,33 @@ ul .nav-items .nav-links {
     .team-content {
         margin-left: .56rem;
         margin-top: 1.25rem;
+    }
+
+    .fact-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .love-and-enjoy {
+        flex-direction: column;
+    }
+
+    #primary-btn {
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+
+        margin-bottom: 3rem;
+    }
+
+    .love-card {
+        padding: .5rem .5rem;
+        margin: 0 .5rem;
+        margin-bottom: 1.25rem;
+    }
+     .sponsor-card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sponsor{
+        justify-items: center;
     }
 }
