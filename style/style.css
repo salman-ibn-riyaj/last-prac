@@ -165,7 +165,18 @@ ul .nav-items .nav-links {
         margin: 0 auto;
     }
 
-    .image-container img{
+    .image-container img {
         max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .team-section {
+        flex-direction: column;
+    }
+
+    .team-content {
+        margin-left: .56rem;
+        margin-top: 1.25rem;
     }
 }
